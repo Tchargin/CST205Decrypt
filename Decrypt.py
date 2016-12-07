@@ -31,11 +31,11 @@ def open_file(filename):
         subprocess.call([opener, encoded_image_file])
 
 
-encoded_image_file = "enc_Nothingtoseehere.png"
+encoded_image_file = "enc_Image.png"
 img2 = Image.open(encoded_image_file)
 hidden_text = decode_image(img2)
 print("Secret message: {}".format(hidden_text))
-img_data= open('enc_Nothingtoseehere.png','rb').read()
+img_data= open('enc_Image.png','rb').read()
 def displayText():
     global entryWidget
 
