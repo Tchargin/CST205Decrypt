@@ -5,6 +5,9 @@ from PIL import Image
 import smtplib
 import os, sys, subprocess
 
+
+# Take the information / sentence out of the picture
+
 def decode_image(img):
         width, height = img.size
         msg = ""
